@@ -1,0 +1,133 @@
+html {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  min-height: 100vh;
+  width: 50%;
+  background-color: hsl(0, 0%, 94%);
+}
+
+.main {
+  margin: auto;
+  width: 25vw;
+  background-color: hsl(0, 0%, 100%);
+  padding: 2rem;
+  border-radius: 10px 10px 100px 10px;
+}
+
+/* input area */
+.container {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.container .input-box {
+  margin-right: 15px;
+  font-size: 0.58rem;
+  font-weight: 800;
+  color: hsl(0, 1%, 44%);
+  padding-bottom: -2rem;
+}
+
+.input-box input {
+  display: block;
+  width: 70px;
+  border: 2px solid hsl(0, 0%, 94%);
+  border-radius: 4px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-size: 1rem;
+  padding: 6px 9px;
+}
+
+small {
+  color: red;
+  font-size: 0.5rem;
+}
+/* button area */
+.btn-line {
+  display: flex;
+  align-items: center;
+}
+.line {
+  margin: auto;
+  width: 100%;
+  border-bottom: 2px solid hsl(0, 0%, 94%);
+}
+.btn {
+  background-color: hsl(259, 100%, 65%);
+  padding: 0.78rem;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+}
+
+.btn:hover {
+  background-color: black;
+}
+
+/* result section */
+
+.result-container h1 {
+  font-size: 4rem;
+  font-weight: 800;
+  font-style: italic;
+  line-height: 0.5;
+}
+
+.result-container span {
+  color: hsl(259, 100%, 65%);
+  margin-right: 10px;
+}
+
+/* For Mobile Portrait View */
+@media (max-width: 600px) {
+  .main {
+    margin: auto;
+    width: 70vw;
+  }
+  .container .input-box {
+    margin-right: 15px;
+    font-size: 0.5rem;
+    font-weight: 800;
+    margin-bottom: 2rem;
+    
+  }
+
+  .input-box input {
+    display: block;
+    width: 50px;
+    font-size: 0.5rem;
+    padding: 4px 7px;
+  }
+  /* button area */
+  
+  .btn {
+    background-color: hsl(259, 100%, 65%);
+    border-radius: 100%;
+    cursor: pointer;
+    border: none;
+    position: absolute;
+    bottom: 56.5%;
+    left: 46%;
+  }
+  .icon {
+    width: 1rem;
+  }
+
+  .result-container {
+    margin-top: 4rem;
+  }
+  .result-container h1 {
+    font-size: 2.5rem;
+    line-height: 0.5;
+  }
+}
